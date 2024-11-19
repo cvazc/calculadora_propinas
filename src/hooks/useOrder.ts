@@ -19,7 +19,13 @@ export default function useOrder() {
         }
     };
 
+    const removeItem = () => {
+        console.log("Eliminando");
+    };
+
     return {
+        order,
         addItem,
+        removeItem,
     };
 }
